@@ -1,6 +1,7 @@
 import { Dispatch, MouseEvent, SetStateAction, useEffect, useCallback, useMemo, useRef } from "react";
 import { aboutSectionId, heroSectionId, projectsSectionId, testimonialsSectionId } from "./constants";
 import { twMerge } from "tailwind-merge";
+import { motion, LayoutGroup } from "framer-motion";
 import BriefcaseIcon from "@/assets/icons/briefcase.svg";
 import FeedbackReviewIcon from "@/assets/icons/feedback-review.svg";
 import IdBadgeIcon from "@/assets/icons/id-badge.svg";
@@ -125,48 +126,62 @@ export const Header = ({
 
     return (
         <div className="flex justify-center items-center fixed top-3 w-full z-20">
-            <nav className="flex gap-3 p-0.5 border border-white/30 rounded-full bg-white/10 backdrop-blur">
-                {sectionIds.map((sectionId) => {
-                    const labels = {
-                        [heroSectionId]: "Home",
-                        [projectsSectionId]: "Projects",
-                        [testimonialsSectionId]: "Impressions",
-                        [aboutSectionId]: "About",
-                    };
+            <LayoutGroup>
+                <nav className="flex gap-3 p-0.5 border border-white/20 rounded-full bg-white/10 backdrop-blur-xl backdrop-saturate-150 shadow-lg shadow-black/20">
+                    {sectionIds.map((sectionId) => {
+                        const labels = {
+                            [heroSectionId]: "Home",
+                            [projectsSectionId]: "Projects",
+                            [testimonialsSectionId]: "Impressions",
+                            [aboutSectionId]: "About",
+                        };
 
-                    const renderIcon = (id: string) => {
-                        switch (id) {
-                            case heroSectionId:
-                                return <HomeIcon className="size-5 block" />;
-                            case projectsSectionId:
-                                return <BriefcaseIcon className="size-5 block" />;
-                            case testimonialsSectionId:
-                                return <FeedbackReviewIcon className="size-5 block" />;
-                            case aboutSectionId:
-                                return <IdBadgeIcon className="size-5 block" />;
-                            default:
-                                return null;
-                        }
-                    };
+                        const renderIcon = (id: string) => {
+                            switch (id) {
+                                case heroSectionId:
+                                    return <HomeIcon className="size-5 block" />;
+                                case projectsSectionId:
+                                    return <BriefcaseIcon className="size-5 block" />;
+                                case testimonialsSectionId:
+                                    return <FeedbackReviewIcon className="size-5 block" />;
+                                case aboutSectionId:
+                                    return <IdBadgeIcon className="size-5 block" />;
+                                default:
+                                    return null;
+                            }
+                        };
 
-                    return (
-                        <a
-                            key={sectionId}
-                            href={`#${sectionId}`}
-                            onClick={handleClick}
-                            title={labels[sectionId as keyof typeof labels]}
-                            aria-label={labels[sectionId as keyof typeof labels]}
-                            className={twMerge(
-                                "nav-item flex items-center gap-2 px-3 py-1",
-                                activeSectionId === sectionId && "nav-highlighted",
-                            )}>
-                            {renderIcon(sectionId)}
-                            <span className="sr-only">{labels[sectionId as keyof typeof labels]}</span>
-                            <span className="hidden md:inline ml-1">{labels[sectionId as keyof typeof labels]}</span>
-                        </a>
-                    );
-                })}
-            </nav>
+                        return (
+                            <a
+                                key={sectionId}
+                                href={`#${sectionId}`}
+                                onClick={handleClick}
+                                title={labels[sectionId as keyof typeof labels]}
+                                aria-label={labels[sectionId as keyof typeof labels]}
+                                className={twMerge(
+                                    "nav-item flex items-center gap-2 px-3 py-1 relative",
+                                    activeSectionId === sectionId && "nav-highlighted",
+                                )}>
+                                {activeSectionId === sectionId && (
+                                    <motion.div
+                                        layoutId="nav-active-pill"
+                                        className="absolute inset-0 rounded-full bg-white/90 shadow-[0_0_12px_rgba(255,255,255,0.15)]"
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 380,
+                                            damping: 22,
+                                            mass: 0.8,
+                                        }}
+                                    />
+                                )}
+                                <span className="relative z-10">{renderIcon(sectionId)}</span>
+                                <span className="sr-only">{labels[sectionId as keyof typeof labels]}</span>
+                                <span className="hidden md:inline ml-1 relative z-10">{labels[sectionId as keyof typeof labels]}</span>
+                            </a>
+                        );
+                    })}
+                </nav>
+            </LayoutGroup>
         </div>
     );
 };
