@@ -29,19 +29,19 @@ export const email = "nayaksoumya072005@gmail.com";
 export const footerLinks: FooterLinkItem[] = [
     {
         title: "Twitter",
-        href: "https://x.com/theprinceraj",
+        href: "https://x.com/soumxyz05",
     },
     {
         title: "Github",
-        href: "https://github.com/theprinceraj",
+        href: "https://github.com/soumxyz",
     },
     {
         title: "LinkedIn",
-        href: "https://www.linkedin.com/in/theprinceraj",
+        href: "www.linkedin.com/in/soumxyz",
     },
     {
         title: "Resume",
-        href: "https://razorpay.me/@theprinceraj",
+        href: "https://drive.google.com/file/d/1Vv8yipcNXy3kQo61ktgnxbeoTsmTLiKQ/view?usp=sharing",
     },
 ];
 
