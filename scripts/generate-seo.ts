@@ -2,7 +2,6 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-    blogs,
     portfolioProjects,
     testimonials,
     siteOrigin,
@@ -35,12 +34,6 @@ function escapeXml(unsafe: string) {
 function generateSitemap() {
     const urls = [
         { loc: `${siteOrigin}/`, changefreq: "daily", priority: 1 },
-        { loc: `${siteOrigin}/blogs`, changefreq: "weekly", priority: 0.8 },
-        ...blogs.filter((blog) => blog.link.startsWith(siteOrigin)).map((blog) => ({
-            loc: blog.link,
-            changefreq: "monthly",
-            priority: 0.6,
-        })),
     ];
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -54,13 +47,8 @@ function generateSitemap() {
 }
 
 function generateRss() {
-    const items = blogs
-        .map(
-            (blog) => `  <item>\n    <title>${escapeXml(blog.title)}</title>\n    <link>${blog.link}</link>\n    <description>${escapeXml(blog.description)}</description>\n    <pubDate>${new Date(blog.date).toUTCString()}</pubDate>\n  </item>`
-        )
-        .join("\n");
-
-    const rss = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>Prince Raj - Blogs</title>\n  <link>${siteOrigin}/blogs</link>\n  <description>Thoughts on web dev and engineering.</description>\n${items}\n</channel>\n</rss>`;
+    // We removed the blogs section, but keeping an empty RSS for now if needed, or we can just skip it
+    const rss = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>Soumya Sagar Nayak - Updates</title>\n  <link>${siteOrigin}/</link>\n  <description>Thoughts on web dev and engineering.</description>\n</channel>\n</rss>`;
 
     writeFileSync(path.join(PUBLIC_DIR, "rss.xml"), rss, "utf8");
     console.log("Wrote public/rss.xml");
@@ -70,14 +58,13 @@ function generateLlmstxt() {
     mkdirSync(WELL_KNOWN_DIR, { recursive: true });
 
     const content = [
-        "# Prince Raj",
+        "# Soumya Sagar Nayak",
         "",
         "## About",
-        "Portfolio and engineering blog for Prince Raj.",
+        "Portfolio and engineering showcase for Soumya Sagar Nayak.",
         "",
         "## Pages",
         `- [Home](${siteOrigin}/)`,
-        `- [Blogs](${siteOrigin}/blogs)`,
         "",
         "## Projects",
         ...portfolioProjects.flatMap((project) => [
@@ -86,15 +73,6 @@ function generateLlmstxt() {
             `  - Year: ${project.year}`,
             `  - Link: ${project.link}`,
             `  - Highlights: ${project.results.join("; ")}`,
-            "",
-        ]),
-        "## Blogs",
-        ...blogs.flatMap((blog) => [
-            `- ${blog.title}`,
-            `  - Date: ${blog.date}`,
-            `  - Niche: ${blog.niche}`,
-            `  - Link: ${blog.link}`,
-            `  - Summary: ${blog.description}`,
             "",
         ]),
         "## Reviews",
