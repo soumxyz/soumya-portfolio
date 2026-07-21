@@ -1,4 +1,4 @@
-export const siteOrigin = "https://theprinceraj.in";
+export const siteOrigin = "https://soumyacodes.vercel.app";
 
 
 

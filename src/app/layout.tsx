@@ -10,12 +10,12 @@ const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weig
 export const metadata: Metadata = {
     title: { default: "Soumya Sagar Nayak", template: "%s | Soumya Sagar Nayak" },
     description: "An engineering undergrad who likes making end-to-end web experiences",
-    metadataBase: new URL("https://theprinceraj.in"),
+    metadataBase: new URL("https://soumyacodes.vercel.app"),
     alternates: { canonical: "/" },
     openGraph: {
         title: "Soumya Sagar Nayak",
         description: "An engineering undergrad who likes making end-to-end web experiences",
-        url: "https://theprinceraj.in",
+        url: "https://soumyacodes.vercel.app",
         siteName: "Soumya Sagar Nayak",
         images: [
             {
@@ -60,7 +60,7 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Soumya Sagar Nayak",
-        url: "https://theprinceraj.in",
+        url: "https://soumyacodes.vercel.app",
         sameAs: [
             "https://x.com/theprinceraj",
             "https://github.com/theprinceraj",

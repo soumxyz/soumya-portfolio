@@ -1,67 +1,29 @@
-# Prince Raj
+# Soumya Sagar Nayak
 
 ## About
-Portfolio and engineering blog for Prince Raj.
+Portfolio and engineering showcase for Soumya Sagar Nayak.
 
 ## Pages
-- [Home](https://theprinceraj.in/)
-- [Blogs](https://theprinceraj.in/blogs)
+- [Home](https://soumyacodes.vercel.app/)
 
 ## Projects
-- AI Governance Proxy
-  - Company: Project Sentinel
+- Your data, Empowering AI
+  - Company: Homoai
   - Year: 2026
-  - Link: https://sentinel.theprinceraj.in
-  - Highlights: Built a low-latency AI governance proxy to intercept and validate all application-to-LLM API requests; Integrated Microsoft Presidio to automatically detect and redact 50+ PII and sensitive data types; Designed a live governance log providing real-time visibility into semantic intent and safety risks
+  - Link: https://homoai.online
+  - Highlights: a platform where companies collect user generated data and reward participants through task based interactions.; Built responsive UI components using React , Typescript , TailwindCSS and Vite with a focus on reusable components and performance; Built reusable React components and integrated frontend workflows with Backend APIs using Typescript and TailwindCSS
 
-- Fashion E-commerce Store (Freelance)
-  - Company: The Loud Wardrobe
-  - Year: 2026
-  - Link: https://theloudwardrobe.com
-  - Highlights: Built a scalable Shopify storefront for a fashion brand; Integrated payment, shipping, and order fulfillment workflows; Configured analytics and conversion tracking infrastructure
-
-- AI-Powered Cover Letter Assistant
-  - Company: Cover Genius
+- Share Code Instantly and Anonymously
+  - Company: ShareRoom
   - Year: 2025
-  - Link: https://cv.theprinceraj.in
-  - Highlights: Built an AI-driven system to generate tailored cover letters with resume PDF analysis in seconds; Implemented secure authentication with email verification and guest modes; Developed credit-based generation system with Razorpay and PayPal support
+  - Link: https://shareroom.vercel.app/
+  - Highlights: Create temporary chat rooms instantly without any signup required.; Built with real-time syncing for seamless collaboration.; Features a sleek and modern UI for an anonymous coding experience.
 
-- Scalable Backend for Social Media Platform
-  - Company: Local Social
+- Nature guides, we serve
+  - Company: Seasoserve
   - Year: 2025
-  - Link: /images/flowchart-local-social.png
-  - Highlights: Engineered a modular NestJS backend powering 30+ production-grade APIs; Built social features including authentication, feeds, profiles, and hashtags; Designed the complete database architecture with geospatial querying for location-aware content discovery
-
-- OCR-Based Marksheet Scanner
-  - Company: Markshify
-  - Year: 2024
-  - Link: https://github.com/theprinceraj/Markshify
-  - Highlights: Automated conversion of scanned marksheets into structured CSV to eliminate manual data entry; Extracts 20+ fields (student details, roll, subject-wise marks, totals) with validation and confidence scoring; Custom and robust utility functions for data extraction
-
-## Blogs
-- How I Discovered and Helped Fix a Security Flaw in a Government Portal?
-  - Date: 12 Jun '26
-  - Niche: Cybersecurity
-  - Link: https://medium.com/@theprinceraj/discovering-a-security-flaw-in-a-government-portal-used-by-3-lakh-students-ad3bf67a0513
-  - Summary: While using a government portal serving over 3 lakh students and beneficiaries, I discovered a Broken Access Control vulnerability that could expose sensitive information to unauthorized users. This article documents the complete journey—from discovery and validation to responsible disclosure with CERT-In and eventual remediation.
-
-- How Access Token and Refresh Token Work in Authentication Flows in Modern Backend Systems?
-  - Date: 1 Jan '26
-  - Niche: Backend Auth
-  - Link: https://medium.com/@theprinceraj/how-access-token-and-refresh-token-work-in-authentication-flows-in-modern-backend-systems-1ef6e498e217
-  - Summary: Almost any application you use today, uses access tokens and refresh tokens to handle its authentication flows. Have you ever wondered how you stay logged into your favorite apps for days without re-entering your password? The secret lies in two special tokens working behind the scenes: access tokens and refresh tokens.
-
-- NestJS Payments Setup Made Simple: Implementing Razorpay in Your Backend API
-  - Date: 6 Dec '25
-  - Niche: Payment Setup
-  - Link: https://medium.com/@theprinceraj/nestjs-payments-setup-made-simple-implementing-razorpay-in-your-backend-api-49f68b41c462
-  - Summary: A practical, step-by-step guide to integrating Razorpay with a NestJS backend. This article explains some payment concepts you need to know (orders, payments, and security), shows how to configure Razorpay credentials, implements server-side payment creation and verification. Ideal for backend developers looking to add payment flows to their APIs without getting lost in the docs.
-
-- How Most Social Media Check Your Username in Milliseconds: A Gentle Guide to Bloom Filters
-  - Date: 30 Aug '25
-  - Niche: Data Structures
-  - Link: https://medium.com/@theprinceraj/how-most-social-media-check-your-username-in-milliseconds-a-gentle-guide-to-bloom-filters-94d89ca40973
-  - Summary: On popular social media platforms like Instagram, checking whether a username is available has to happen almost instantly, even when the system is handling millions or billions of accounts. Instead of searching linearly, Bloom Filters are used to quickly rule out usernames that definitely do not exist and narrow the search. This makes availability checks much faster and more efficient. Let's explore how this probabilistic data structure works!
+  - Link: https://seasoserve.vercel.app
+  - Highlights: Built an AI-driven system to suggest food based on the environment user is in; Designed and developed a sleek, responsive user interface using react tailwind css, incorporating clean, minimalist aesthetic principles for an enhanced user experience.; Integrated backend REST APIs / Machine Learning inference pipelines to display results dynamically with tailored visual indicators and metrics.
 
 ## Reviews
 - Shanzil
