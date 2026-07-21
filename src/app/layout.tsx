@@ -8,21 +8,21 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weight: ["400"] });
 
 export const metadata: Metadata = {
-    title: { default: "Prince Raj", template: "%s | Prince Raj" },
+    title: { default: "Soumya Sagar Nayak", template: "%s | Soumya Sagar Nayak" },
     description: "An engineering undergrad who likes making end-to-end web experiences",
     metadataBase: new URL("https://theprinceraj.in"),
     alternates: { canonical: "/" },
     openGraph: {
-        title: "Prince Raj",
+        title: "Soumya Sagar Nayak",
         description: "An engineering undergrad who likes making end-to-end web experiences",
         url: "https://theprinceraj.in",
-        siteName: "Prince Raj",
+        siteName: "Soumya Sagar Nayak",
         images: [
             {
                 url: "/images/hero-screenshot.png",
                 width: 1200,
                 height: 630,
-                alt: "Prince Raj — Software Engineer",
+                alt: "Soumya Sagar Nayak — Software Engineer",
             },
         ],
         locale: "en_US",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Prince Raj",
+        title: "Soumya Sagar Nayak",
         description: "An engineering undergrad who likes making end-to-end web experiences",
         images: ["/images/hero-screenshot.png"],
     },
     icons: {
-        icon: "/favicon.ico",
-        apple: "/favicon.ico",
+        icon: "/favicon.png",
+        apple: "/favicon.png",
     },
     robots: {
         index: true,
@@ -59,7 +59,7 @@ export default function RootLayout({
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "Prince Raj",
+        name: "Soumya Sagar Nayak",
         url: "https://theprinceraj.in",
         sameAs: [
             "https://x.com/theprinceraj",
