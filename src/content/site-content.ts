@@ -1,12 +1,6 @@
 export const siteOrigin = "https://theprinceraj.in";
 
-export type BlogItem = {
-    title: string;
-    description: string;
-    date: string;
-    link: string;
-    niche: string;
-};
+
 
 export type FooterLinkItem = {
     title: string;
@@ -28,42 +22,9 @@ export type TestimonialItem = {
     text: string;
 };
 
-export const email = "profile.princeraj@gmail.com";
+export const email = "nayaksoumya072005@gmail.com";
 
-export const blogs: BlogItem[] = [
-    {
-        title: "How I Discovered and Helped Fix a Security Flaw in a Government Portal?",
-        description:
-            "While using a government portal serving over 3 lakh students and beneficiaries, I discovered a Broken Access Control vulnerability that could expose sensitive information to unauthorized users. This article documents the complete journey—from discovery and validation to responsible disclosure with CERT-In and eventual remediation.",
-        date: "12 Jun '26",
-        link: "https://medium.com/@theprinceraj/discovering-a-security-flaw-in-a-government-portal-used-by-3-lakh-students-ad3bf67a0513",
-        niche: "Cybersecurity",
-    },
-    {
-        title: "How Access Token and Refresh Token Work in Authentication Flows in Modern Backend Systems?",
-        description:
-            "Almost any application you use today, uses access tokens and refresh tokens to handle its authentication flows. Have you ever wondered how you stay logged into your favorite apps for days without re-entering your password? The secret lies in two special tokens working behind the scenes: access tokens and refresh tokens.",
-        date: "1 Jan '26",
-        link: "https://medium.com/@theprinceraj/how-access-token-and-refresh-token-work-in-authentication-flows-in-modern-backend-systems-1ef6e498e217",
-        niche: "Backend Auth",
-    },
-    {
-        title: "NestJS Payments Setup Made Simple: Implementing Razorpay in Your Backend API",
-        description:
-            "A practical, step-by-step guide to integrating Razorpay with a NestJS backend. This article explains some payment concepts you need to know (orders, payments, and security), shows how to configure Razorpay credentials, implements server-side payment creation and verification. Ideal for backend developers looking to add payment flows to their APIs without getting lost in the docs.",
-        date: "6 Dec '25",
-        link: "https://medium.com/@theprinceraj/nestjs-payments-setup-made-simple-implementing-razorpay-in-your-backend-api-49f68b41c462",
-        niche: "Payment Setup",
-    },
-    {
-        title: "How Most Social Media Check Your Username in Milliseconds: A Gentle Guide to Bloom Filters",
-        description:
-            "On popular social media platforms like Instagram, checking whether a username is available has to happen almost instantly, even when the system is handling millions or billions of accounts. Instead of searching linearly, Bloom Filters are used to quickly rule out usernames that definitely do not exist and narrow the search. This makes availability checks much faster and more efficient. Let's explore how this probabilistic data structure works!",
-        date: "30 Aug '25",
-        link: "https://medium.com/@theprinceraj/how-most-social-media-check-your-username-in-milliseconds-a-gentle-guide-to-bloom-filters-94d89ca40973",
-        niche: "Data Structures",
-    },
-];
+
 
 export const footerLinks: FooterLinkItem[] = [
     {
@@ -79,72 +40,50 @@ export const footerLinks: FooterLinkItem[] = [
         href: "https://www.linkedin.com/in/theprinceraj",
     },
     {
-        title: "Sponsor Me ❤️",
+        title: "Resume",
         href: "https://razorpay.me/@theprinceraj",
     },
 ];
 
 export const portfolioProjects: PortfolioProjectItem[] = [
     {
-        "company": "GST Reco Pro",
-        "year": "2026",
-        "title": "Tax Compliance & Reconciliation SaaS",
-        "results": [
-            "Collaborated with a domain expert to build a production-ready bulk tax document processing platform.",
-            "Architected a secure admin dashboard with advanced reporting and client-side data privacy.",
-            "Built an end-to-end solution with Supabase, Razorpay, React, and TailwindCSS.",
-        ],
-        "link": "https://www.youtube.com/watch?v=MR8hMd3QWLo",
-        "linkText": "View Launch Video",
-    },
-    {
-        company: "Project Sentinel",
+        company: "Homoai",
         year: "2026",
-        title: "AI Governance Proxy",
+        title: "Your data, Empowering AI",
         results: [
-            "Built a low-latency AI governance proxy to intercept and validate all application-to-LLM API requests",
-            "Integrated Microsoft Presidio to automatically detect and redact 50+ PII and sensitive data types",
-            "Designed a live governance log providing real-time visibility into semantic intent and safety risks",
+            "a platform where companies collect user generated data and reward participants through task based interactions.",
+            "Built responsive UI components using React , Typescript , TailwindCSS and Vite with a focus on reusable components and performance",
+            "Built reusable React components and integrated frontend workflows with Backend APIs using Typescript and TailwindCSS",
         ],
-        link: "https://sentinel.theprinceraj.in",
+        link: "https://homoai.online",
         linkText: "View Live Site",
     },
     {
-        company: "Cover Genius",
+        company: "ShareRoom",
         year: "2025",
-        title: "AI-Powered Cover Letter Assistant",
+        title: "Share Code Instantly and Anonymously",
         results: [
-            "Built an AI-driven system to generate tailored cover letters with resume PDF analysis in seconds",
-            "Implemented secure authentication with email verification and guest modes",
-            "Developed credit-based generation system with Razorpay and PayPal support",
+            "Create temporary chat rooms instantly without any signup required.",
+            "Built with real-time syncing for seamless collaboration.",
+            "Features a sleek and modern UI for an anonymous coding experience.",
         ],
-        link: "https://cv.theprinceraj.in",
+        link: "https://shareroom.vercel.app/",
         linkText: "View Live Site",
     },
+
     {
-        company: "Local Social",
+        company: "Seasoserve",
         year: "2025",
-        title: "Scalable Backend for Social Media Platform",
+        title: "Nature guides, we serve",
         results: [
-            "Engineered a modular NestJS backend powering 30+ production-grade APIs",
-            "Built social features including authentication, feeds, profiles, and hashtags",
-            "Designed the complete database architecture with geospatial querying for location-aware content discovery",
+            "Built an AI-driven system to suggest food based on the environment user is in",
+            "Designed and developed a sleek, responsive user interface using react tailwind css, incorporating clean, minimalist aesthetic principles for an enhanced user experience.",
+            "Integrated backend REST APIs / Machine Learning inference pipelines to display results dynamically with tailored visual indicators and metrics.",
         ],
-        link: "/images/flowchart-local-social.png",
-        linkText: "View Flowchart",
+        link: "https://seasoserve.vercel.app",
+        linkText: "View Live Site",
     },
-    {
-        company: "Markshify",
-        year: "2024",
-        title: "OCR-Based Marksheet Scanner",
-        results: [
-            "Automated conversion of scanned marksheets into structured CSV to eliminate manual data entry",
-            "Extracts 20+ fields (student details, roll, subject-wise marks, totals) with validation and confidence scoring",
-            "Custom and robust utility functions for data extraction",
-        ],
-        link: "https://github.com/theprinceraj/Markshify",
-        linkText: "View Code",
-    },
+
 ];
 
 export const testimonials: TestimonialItem[] = [

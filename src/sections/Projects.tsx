@@ -44,7 +44,7 @@ export const ProjectsSection = ({ id }: { id: string }) => {
                                         ))}
                                     </ul>
                                     <a href={project.link} target="_blank">
-                                        <button className="bg-white text-gray-950 h-12 rounded-xl w-full md:w-auto md:px-6 my-8 font-semibold inline-flex items-center justify-center gap-2">
+                                        <button className="bg-white text-gray-900 h-12 rounded-xl w-full md:w-auto md:px-6 my-8 font-semibold inline-flex items-center justify-center gap-2">
                                             <span>{project.linkText}</span>
                                             <ArrowUpRightIcon className="size-4" />
                                         </button>

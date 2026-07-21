@@ -20,7 +20,8 @@ export const Header = ({
     const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     // Memoize the section ids array to avoid recreating it on each render
-    const sectionIds = useMemo(() => [heroSectionId, projectsSectionId, testimonialsSectionId, aboutSectionId], []);
+    // If we bring back endorsements in the future, just add testimonialsSectionId back into the array below:
+    const sectionIds = useMemo(() => [heroSectionId, projectsSectionId, /* testimonialsSectionId, */ aboutSectionId], []);
 
     const scrollToSection = useCallback(
         (sectionId: string) => {

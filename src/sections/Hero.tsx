@@ -1,4 +1,4 @@
-import memojiImage from "@/assets/images/memoji-computer.webp";
+import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
@@ -9,7 +9,7 @@ import { ArrowDownIcon } from "lucide-react";
 
 export const HeroSection = ({ id }: { id: string }) => {
     return (
-        <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip" id={id}>
+        <section className="py-32 md:py-40 lg:py-48 relative z-0 overflow-x-clip" id={id}>
             <div
                 className="absolute inset-0"
                 style={{
@@ -99,8 +99,8 @@ export const HeroSection = ({ id }: { id: string }) => {
             </div>
             <div className="container relative z-10">
                 <div className="flex flex-col justify-center items-center">
-                    <Image src={memojiImage} className="size-[100px]" alt="Person peeking from behind laptop" />
-                    <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-3.5">
+                    <Image src={memojiImage} className="size-[140px] -mb-[19px]" alt="Person peeking from behind laptop" />
+                    <div className="bg-gray-900 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-3.5 rounded-lg relative z-10">
                         <div className="bg-green-500 size-2.5 rounded-full relative z-0">
                             <div className="absolute inset-0 bg-green-500 rounded-full animate-ping -z-10"></div>
                         </div>

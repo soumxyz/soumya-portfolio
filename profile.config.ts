@@ -25,18 +25,15 @@ import CloudinaryIcon from "@/assets/icons/toolbox/cloudinary.svg";
 import AwsIcon from "@/assets/icons/toolbox/aws.svg";
 import AzureIcon from "@/assets/icons/toolbox/azure.svg";
 import FigmaIcon from "@/assets/icons/toolbox/figma.svg";
-import localSocialPostmanPage from "@/assets/images/local-social-postman-page.png";
-import coverGeniusPage from "@/assets/images/cover-genius-screenshot.webp";
-import gstRecoProPage from "@/assets/images/gst-reco-pro-page.webp";
-import sentinelPage from "@/assets/images/sentinel-landing-page.webp";
-import markshifyLandingPage from "@/assets/images/markshify-landing-page.png";
+import shareRoomPage from "@/assets/images/shareroom.png";
+import homoaiPage from "@/assets/images/homoai-landing-page.png";
+import seasoservePage from "@/assets/images/seasoserve-landing.png";
 import ayushYadavAvatar from "@/assets/images/ayush-yadav-avatar.webp";
 import rohanSinghAvatar from "@/assets/images/rohan-singh-avatar.webp";
 import grownUpMarketingAvatar from "@/assets/images/grown-up-marketing.webp";
 import deepakKumarAvatar from "@/assets/images/deepak-kumar-avatar.webp";
 import shanzilAvatar from "@/assets/images/shanzil-avatar.webp";
 import {
-    blogs as sharedBlogs,
     email as sharedEmail,
     footerLinks as sharedFooterLinks,
     portfolioProjects as sharedPortfolioProjects,
@@ -44,11 +41,9 @@ import {
 } from "./src/content/site-content";
 
 const portfolioProjectImages = [
-    gstRecoProPage,
-    sentinelPage,
-    coverGeniusPage,
-    localSocialPostmanPage,
-    markshifyLandingPage,
+    homoaiPage,
+    shareRoomPage,
+    seasoservePage,
 ];
 
 const testimonialAvatars = [
@@ -72,7 +67,6 @@ const testimonialsWithAvatars = sharedTestimonials.map((testimonial, index) => (
 
 const CONFIG = {
     email: sharedEmail,
-    blogs: sharedBlogs,
     toolboxItems: [
         {
             title: "HTML5",
@@ -91,10 +85,6 @@ const CONFIG = {
             iconType: SquareTsIcon,
         },
         {
-            title: "Bun",
-            iconType: BunIcon,
-        },
-        {
             title: "Node.js",
             iconType: NodeJsIcon,
         },
@@ -103,44 +93,8 @@ const CONFIG = {
             iconType: TailwindIcon,
         },
         {
-            title: "Solidity",
-            iconType: SolidityIcon,
-        },
-        {
-            title: "Nest",
-            iconType: NestIcon,
-        },
-        {
-            title: "Swagger",
-            iconType: SwaggerIcon,
-        },
-        {
-            title: "Electron",
-            iconType: ElectronIcon,
-        },
-        {
-            title: "Postman",
-            iconType: PostmanIcon,
-        },
-        {
             title: "React",
             iconType: ReactIcon,
-        },
-        {
-            title: "Vite",
-            iconType: ViteIcon,
-        },
-        {
-            title: "MongoDB",
-            iconType: MongoDBIcon,
-        },
-        {
-            title: "Firebase",
-            iconType: FirebaseIcon,
-        },
-        {
-            title: "Polypane",
-            iconType: PolypaneIcon,
         },
         {
             title: "Figma",
@@ -161,22 +115,6 @@ const CONFIG = {
         {
             title: "Vercel",
             iconType: VercelIcon,
-        },
-        {
-            title: "Shopify",
-            iconType: ShopifyIcon,
-        },
-        {
-            title: "Cloudflare",
-            iconType: CloudflareIcon,
-        },
-        {
-            title: "Cloudinary",
-            iconType: CloudinaryIcon,
-        },
-        {
-            title: "AWS",
-            iconType: AwsIcon,
         },
         {
             title: "Azure",
@@ -240,7 +178,6 @@ const CONFIG = {
 };
 
 export const email = CONFIG.email;
-export const blogs = CONFIG.blogs;
 export const toolBoxItems = CONFIG.toolboxItems;
 export const hobbies = CONFIG.hobbies;
 export const footerLinks = CONFIG.footerLinks;

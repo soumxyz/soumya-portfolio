@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import bookImage from "@/assets/images/srimad-bhagavad-gita-cover.webp";
 import mapImage from "@/assets/images/map.png";
-import smileMemoji from "@/assets/images/memoji-smile.png";
+import smileMemoji from "@/assets/images/memoji-smile-Photoroom.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItemsRow } from "@/components/ToolboxItemsRow";
 import { motion } from "framer-motion";
@@ -73,7 +73,7 @@ export const AboutSection = ({ id }: { id: string }) => {
                                         }}
                                         drag
                                         dragConstraints={constraintRef}>
-                                        <span className="font-semibold text-gray-950">{hobby.title}</span>
+                                        <span className="font-semibold text-gray-900">{hobby.title}</span>
                                         <span>{hobby.emoji}</span>
                                     </motion.div>
                                 ))}
@@ -86,7 +86,7 @@ export const AboutSection = ({ id }: { id: string }) => {
                                 className="h-full w-full object-cover object-left-top"
                                 loading="lazy"
                             />
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-900/30">
                                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full animate-ping [animation-duration:2s]"></div>
                                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full"></div>
                                 <Image src={smileMemoji} alt="Smile Memoji" className="size-20" />

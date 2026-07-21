@@ -1,5 +1,5 @@
 "use client";
-import BlogHomepagePopup from "@/components/BlogPopup";
+
 import { AboutSection } from "@/sections/About";
 import { aboutSectionId, contactSectionId, heroSectionId, projectsSectionId } from "@/sections/constants";
 import { ContactSection } from "@/sections/Contact";
@@ -18,10 +18,10 @@ export default function Home() {
             <HeroSection id={heroSectionId} />
             <ProjectsSection id={projectsSectionId} />
             <TapeSection />
-            <TestimonialsSection />
+            {/* If you want to bring back the endorsements section, uncomment the line below */}
+            {/* <TestimonialsSection /> */}
             <AboutSection id={aboutSectionId} />
             <ContactSection id={contactSectionId} />
-            <BlogHomepagePopup />
             <Footer />
         </>
     );

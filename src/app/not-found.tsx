@@ -1,6 +1,6 @@
 import grainImage from "@/assets/images/grain.jpg";
 import Link from "next/link";
-import { ArrowUpRightIcon } from "lucide-react";
+
 import { ContactSection } from "@/sections/Contact";
 import { contactSectionId } from "@/sections/constants";
 import { Footer } from "@/sections/Footer";
@@ -46,12 +46,7 @@ export default function NotFound() {
                                     <span className="font-semibold">Back Home</span>
                                 </button>
                             </Link>
-                            <Link href="/blogs">
-                                <button className="inline-flex items-center gap-2 px-6 h-12 border border-white text-gray-900 bg-white rounded-xl">
-                                    <span className="font-semibold">Read Blogs</span>
-                                    <ArrowUpRightIcon className="size-4" />
-                                </button>
-                            </Link>
+
                         </div>
                     </div>
                     <ContactSection id={contactSectionId} />
