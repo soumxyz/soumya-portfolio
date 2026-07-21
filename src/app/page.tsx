@@ -11,7 +11,6 @@ import { TapeSection } from "@/sections/Tape";
 import { TestimonialsSection } from "@/sections/Testimonials";
 import { useState } from "react";
 import { SmoothCursor } from "@/components/SmoothCursor";
-import { ProgressiveBlur } from "@/components/ProgressiveBlur";
 
 export default function Home() {
     const [activeSectionId, setActiveSectionId] = useState<string>(heroSectionId);
@@ -27,7 +26,6 @@ export default function Home() {
             <AboutSection id={aboutSectionId} />
             <ContactSection id={contactSectionId} />
             <Footer />
-            <ProgressiveBlur position="bottom" height="6rem" className="fixed bottom-0 w-full" />
         </>
     );
 }
